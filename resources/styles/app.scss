@@ -1,1 +1,47 @@
 @import "./variables.scss";
+body{
+    color: $secondary;
+}
+.heading{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.body{
+    background-image: url("./../../public/images/bgimg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#searchDiv{
+    display: none;
+    color: black;
+}
+#shopDiv {
+    display: none;
+    background-color: $primary;
+    color: white;
+}
+#shopDiv ul li{
+    &:hover{
+        color: black;
+    }
+}
+#sidenav{
+    display: none;
+}
+.btn{
+    background-color: $primary;
+    color:white;
+    &:hover{
+        background-color: $secondary;
+    }
+}
+ul li{
+    &:hover{
+        color: $primary;
+    }
+}
+.heading{
+    &:hover{
+        color: $primary;
+    }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift World</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/styles/app.css">
+</head>
+<body>
+    <div class="container mx-auto">
+        <h1>Hello <span class="font-bold"><%=registeredUser.name%></span>!!</h1>
+        <form action="/confirmOtp" method="post" class="space-y-5 mt-5">
+        <input type="text" name="user" value="<%=JSON.stringify(registeredUser)%>" hidden>
+        <input type="text"  class="w-full h-12 border border-gray-800 rounded px-3" name="otp" placeholder="Enter the OTP" />
+        <button class="btn px-8 py-2">Confirm</button>
+    </form>
+    </div>
+    <script src="/script/app.js"></script>
+</body>
+</html>

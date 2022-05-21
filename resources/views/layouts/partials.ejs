@@ -1,0 +1,35 @@
+<header class="container mx-auto">
+    <div class="flex justify-between">
+        <div>
+            <ul class="flex">
+                <li class="font-bold p-4"><a href="/user/home">Home</a></li>
+                <li class="font-bold p-4" id="shop"><a href="/shop">Shop</a></li>
+                <li class="font-bold p-4"><a href="/sell">Sell</a></li>
+                <li class="font-bold p-4"><a href="/about">About</a></li>
+                <li class="font-bold p-4"><%=user.user.name%></li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="heading">THRIFT WORLD</h1>
+        </div>
+        <div>
+            <ul class="flex">
+                <li class="font-bold p-4"><img src="/images/s-30.png" alt=""></li>
+                <li class="font-bold p-4"><img src="/images/b-30.png" alt=""></li>
+                <li class="font-bold p-4"><img src="/images/u-30.png" id="profile"  alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div id="sidenav" class="absolute shadow-md bg-white px-1 top-0 right-0 mt-16 mr-8">
+        <div class="relative">
+            <ul >
+              <li>
+                <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="/viewProfile/<%=user.user._id%>" data-mdb-ripple="true" data-mdb-ripple-color="dark">View Profile</a>
+              </li>
+              <li>
+                <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-gray-900 hover:bg-gray-100 transition duration-300 ease-in-out" href="/editProfile" data-mdb-ripple="true" data-mdb-ripple-color="dark">Edit profile</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+</header>

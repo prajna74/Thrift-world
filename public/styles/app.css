@@ -1,1 +1,50 @@
+@import url(https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap);
+body {
+  color: black;
+}
 
+.heading {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.body {
+  background-image: url(/images/bgimg1.png?e030245cb15033d66146e1dbd605a2a6);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#searchDiv {
+  display: none;
+  color: black;
+}
+
+#shopDiv {
+  display: none;
+  background-color: #831843;
+  color: white;
+}
+
+#shopDiv ul li:hover {
+  color: black;
+}
+
+#sidenav {
+  display: none;
+}
+
+.btn {
+  background-color: #831843;
+  color: white;
+}
+.btn:hover {
+  background-color: black;
+}
+
+ul li:hover {
+  color: #831843;
+}
+
+.heading:hover {
+  color: #831843;
+}

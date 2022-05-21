@@ -7,7 +7,44 @@
   \*********************************/
 /***/ (() => {
 
+var shop = document.getElementById("shop");
+var shopDiv = document.getElementById("shopDiv");
+var searchDiv = document.getElementById("searchDiv");
+var search = document.getElementById("search");
+shop.addEventListener("click", function () {
+  searchDiv.style.display = "none";
 
+  if (shopDiv.style.display == "block") {
+    shopDiv.style.display = "none";
+  } else {
+    shopDiv.style.display = "block";
+  }
+});
+var profile = document.getElementById("profile");
+var sidenav = document.getElementById("sidenav");
+profile.addEventListener("click", function () {
+  if (sidenav.style.display == "block") {
+    sidenav.style.display = "none";
+  } else {
+    sidenav.style.display = "block";
+  }
+});
+var itemImgs = document.getElementById("item-imgs");
+
+if (itemImgs) {
+  itemImgs.addEventListener("input", function () {
+    document.getElementById("itemimg1").src = window.URL.createObjectURL(event.target.files[0]);
+    document.getElementById("itemimg2").src = window.URL.createObjectURL(event.target.files[1]);
+  });
+}
+
+var postImgs = document.getElementById("postImgs");
+
+if (postImgs) {
+  postImgs.addEventListener("click", function () {
+    itemImgs.click();
+  });
+}
 
 /***/ }),
 

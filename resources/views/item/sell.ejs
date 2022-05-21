@@ -1,0 +1,77 @@
+<section>
+    <h1 class="text-2xl font-bold mb-8 mt-4 text-center">Sell Now!</h1>
+    <div class="container mx-auto w-1/2 mt-4">
+        <form action="/sell" metho="post" enctype="multipart/form-data">
+            <div class="flex justify-between">
+            <div class="w-1/2">
+            <button class="px-4 py-1 btn mb-2" id="postImgs">Upload 2 pictures</button>
+            <input type="file" name="item-imgs" id="item-imgs"  accept="image/*" multiple hidden>
+             <div class="block">
+               <div class="mb-2">
+                <img   class="w-40 h-40" id="itemimg1">
+               </div>
+               <div class="">
+                <img   class="w-40 h-40" id="itemimg2">
+               </div>
+             </div>
+           </div>
+           <div class="w-1/2">
+            <div class="flex">
+                <div class="mb-3 w-4/5 h-12">
+                  <select class="form-select appearance-none
+                    block
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    font-normal
+                    text-gray-700
+                    bg-white bg-clip-padding bg-no-repeat
+                    border border-solid border-gray-300
+                    rounded
+                    transition
+                    ease-in-out
+                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example" name="gender">
+                      <option selected>Gender</option>
+                      <option value="men">Men</option>
+                      <option value="women">Women</option>
+                      <option value="kids">Kids</option>
+                  </select>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="mb-3 w-4/5 h-12">
+                  <select class="form-select appearance-none
+                    block
+                    w-full
+                    px-3
+                    py-1.5
+                    text-base
+                    font-normal
+                    text-gray-700
+                    bg-white bg-clip-padding bg-no-repeat
+                    border border-solid border-gray-300
+                    rounded
+                    transition
+                    ease-in-out
+                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="size" aria-label="Default select example">
+                      <option selected>Size</option>
+                      <option value="XS">XS</option>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                      <option value="XXL">XXL</option>
+                  </select>
+                </div>
+            </div>
+            <input type="text" class="w-4/5 h-12 placeholder-gray-700 border border-solid pl-[14px] border-gray-300 mb-3 rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="details" placeholder="Details"  />
+            <input type="text" class="w-4/5 h-12 placeholder-gray-700 border border-solid  pl-[14px] border-gray-300 mb-3 rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="dolor" placeholder="Color" />
+            <input type="text" class="w-4/5 h-12 placeholder-gray-700 border border-solid  pl-[14px] border-gray-300 mb-3 rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="category" placeholder="Category"  />
+            <input type="number" class="w-4/5 h-12 placeholder-gray-700 border border-solid  pl-[14px] border-gray-300 mb-3 rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="quantity" placeholder="Quantity"  />
+            <input type="text" class="w-4/5 h-12 placeholder-gray-700 border border-solid  pl-[14px] border-gray-300 mb-3 rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="price" placeholder="Price"/>
+           </div>
+        </div>
+        </form>
+    </div>
+</section>
